@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin-Fashion Tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0] py-14 px-5 md:px-10 lg:px-32">
+        <nav class="py-8">
+            <div class="navbar bg-[#FFFBF0]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Address</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost text-3xl font-bold "><span class="text-[#A4BC46]">Penguin</span> Fashion</a>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="flex flex-col gap-7 md:flex-row justify-between items-center">
+            <div class="space-y-4">
+                <h1 class="text-7xl uppercase font-bebas"><span class="text-[#FABE4C]">Be the Penguins</span>
+                    <br>
+                    of Winter
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button
+                    class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="inline w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Buy now</button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto">
+        <section class="py-12">
+            <h1 class="uppercase text-5xl font-bebas p-5 my-3 md:p-6 lg:p-0">WOMan Jacket</h1>
+            <div class="font-roboto grid grid-cols-1 md:grid-cols-2 p-5 md:p-6 lg:p-0  lg:grid-cols-3 gap-8">
+                <!-- jacket 1 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Yellow Coat Jacket </h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+                <!-- jacket 2 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Ladies Jacket</h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+                <!-- jacket 3 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Woman Leather Jacket</h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12">
+            <h1 class="uppercase text-5xl font-bebas p-5 my-3 md:p-6  lg:p-0">Man Jacket</h1>
+            <div class="font-roboto grid grid-cols-1 md:grid-cols-2 p-5 md:p-6 lg:p-0  lg:grid-cols-3 gap-8">
+                <!-- jacket 1 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-4.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Snowboard Jacket Mens</h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+                <!-- jacket 2 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-5.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Man Leather Jackets </h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+                <!-- jacket 3 -->
+                <div class="space-y-3 shadow-xl p-5">
+                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                        <img src="images/jacket-6.png" alt="">
+                    </div>
+                    <h3 class="text-[#363958] font-black text-2xl">Man Casual Jackets</h3>
+                    <p class="text-lg font-normal">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="inline w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex flex-col-reverse gap-14 lg:flex-row lg:items-center lg:gap-7 py-14 p-5 md:p-6 lg:p-0">
+                <div class="w-[100%] lg:w-[40%] space-y-10">
+                    <div class="flex flex-col lg:flex-row items-center shadow-lg rounded-2xl gap-7 p-6">
+                        <div class="w-24">
+                            <img src="icons/house.png" alt="">
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h3 class="text-2xl font-bold">Find the Perfect Fit</h3>
+                            <p class="text-xl leading-7">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center shadow-lg rounded-2xl gap-7 p-6">
+                        <div class="w-24">
+                            <img src="icons/box.png" alt="">
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h3 class="text-2xl font-bold">Free Exchanges</h3>
+                            <p class="text-xl leading-7">One of the many reasons you can shop
+                                with peace of mind.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center shadow-lg rounded-2xl gap-7 p-6">
+                        <div class="w-24">
+                            <img src="icons/question.png" alt="">
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h3 class="text-2xl font-bold">Contact Our Seller</h3>
+                            <p class="text-xl leading-7">They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[100%] lg:w-[60%]">
+                    <img src="images/shopping.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
